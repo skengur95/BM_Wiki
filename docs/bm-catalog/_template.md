@@ -3,6 +3,11 @@
 bm-catalog/index.md 표에도 한 줄 추가할 것.
 -->
 
+---
+tags:
+  - bm-catalog
+---
+
 # {BM 이름}
 
 **한줄 정의:** {이 BM이 뭔지 한 문장}
@@ -37,6 +42,9 @@ bm-catalog/index.md 표에도 한 줄 추가할 것.
 
 - (관련 BM/장르 파일명).md 형태로 실제 링크를 건다
 
----
-tags:
-  - bm-catalog
+## 분류
+
+<div class="bm-categories" markdown>
+[BM 분류](../tags.md#tag:bm-catalog){ .bm-cat-chip }
+[{세부 태그 이름}](../tags.md#tag:{세부-태그-slug}){ .bm-cat-chip }
+</div>

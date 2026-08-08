@@ -1,3 +1,9 @@
+---
+tags:
+  - bm-catalog
+  - 비결제
+---
+
 # 광고형 (리워드형)
 
 **한줄 정의:** 광고 시청을 재화/보상과 교환하는 비결제 수익 구조.
@@ -30,7 +36,9 @@
 
 - [소모성 재화 (컨슈머블)](consumable.md)
 
----
-tags:
-  - bm-catalog
-  - 비결제
+## 분류
+
+<div class="bm-categories" markdown>
+[BM 분류](../tags.md#tag:bm-catalog){ .bm-cat-chip }
+[비결제](../tags.md#tag:비결제){ .bm-cat-chip }
+</div>

@@ -1,3 +1,9 @@
+---
+tags:
+  - bm-catalog
+  - 소모성-재화
+---
+
 # 확률형 아이템 / 가챠
 
 **한줄 정의:** 정해진 확률에 따라 무작위로 아이템·캐릭터를 지급하는 유상(또는 유상재화 소모형) 뽑기 구조.
@@ -45,7 +51,9 @@
 
 - [배틀패스 / 시즌패스](battle-pass.md)
 
----
-tags:
-  - bm-catalog
-  - 소모성-재화
+## 분류
+
+<div class="bm-categories" markdown>
+[BM 분류](../tags.md#tag:bm-catalog){ .bm-cat-chip }
+[소모성 재화](../tags.md#tag:소모성-재화){ .bm-cat-chip }
+</div>

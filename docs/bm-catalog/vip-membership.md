@@ -1,3 +1,9 @@
+---
+tags:
+  - bm-catalog
+  - 소유-꾸미기
+---
+
 # VIP / 멤버십
 
 **한줄 정의:** 결제 누적/등급에 따라 지속적인 혜택 단계를 제공하는 구조.
@@ -30,7 +36,9 @@
 
 - [코스메틱](cosmetic.md)
 
----
-tags:
-  - bm-catalog
-  - 소유-꾸미기
+## 분류
+
+<div class="bm-categories" markdown>
+[BM 분류](../tags.md#tag:bm-catalog){ .bm-cat-chip }
+[소유·꾸미기](../tags.md#tag:소유-꾸미기){ .bm-cat-chip }
+</div>

@@ -1,3 +1,9 @@
+---
+tags:
+  - bm-catalog
+  - 소유-꾸미기
+---
+
 # 코스메틱
 
 **한줄 정의:** 밸런스에 영향을 주지 않는 외형/장식 요소를 판매하는 구조.
@@ -30,7 +36,9 @@
 
 - [VIP / 멤버십](vip-membership.md)
 
----
-tags:
-  - bm-catalog
-  - 소유-꾸미기
+## 분류
+
+<div class="bm-categories" markdown>
+[BM 분류](../tags.md#tag:bm-catalog){ .bm-cat-chip }
+[소유·꾸미기](../tags.md#tag:소유-꾸미기){ .bm-cat-chip }
+</div>

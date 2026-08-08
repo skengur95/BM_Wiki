@@ -1,3 +1,9 @@
+---
+tags:
+  - bm-catalog
+  - 소모성-재화
+---
+
 # 소모성 재화 (컨슈머블)
 
 **한줄 정의:** 사용하는 즉시 소모되는 부스터/재화형 아이템 (경험치 부스트, 부활권, 시간단축권 등).
@@ -30,7 +36,9 @@
 
 - [확률형 아이템 / 가챠](probability-item.md)
 
----
-tags:
-  - bm-catalog
-  - 소모성-재화
+## 분류
+
+<div class="bm-categories" markdown>
+[BM 분류](../tags.md#tag:bm-catalog){ .bm-cat-chip }
+[소모성 재화](../tags.md#tag:소모성-재화){ .bm-cat-chip }
+</div>

@@ -3,6 +3,11 @@
 genres/index.md 표에도 한 줄 추가할 것.
 -->
 
+---
+tags:
+  - genre
+---
+
 # {장르 이름}
 
 **핵심 재미 요소:** {이 장르가 재밌는 근본 이유, 한두 문장}
@@ -29,6 +34,9 @@ genres/index.md 표에도 한 줄 추가할 것.
 
 - 실제로 만들어본 게 있으면 `../prototypes/{slug}.md` 로 실제 링크를 건다
 
----
-tags:
-  - genre
+## 분류
+
+<div class="bm-categories" markdown>
+[장르](../tags.md#tag:genre){ .bm-cat-chip }
+[{장르 이름}](../tags.md#tag:{장르-slug}){ .bm-cat-chip }
+</div>

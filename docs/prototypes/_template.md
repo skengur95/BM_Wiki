@@ -3,6 +3,11 @@
 prototypes/index.md 표에도 한 줄 추가할 것.
 -->
 
+---
+tags:
+  - prototype
+---
+
 # {프로토타입 이름}
 
 **장르:** {장르 이름} → `../genres/{genre-slug}.md` 로 실제 링크를 건다
@@ -30,6 +35,8 @@ prototypes/index.md 표에도 한 줄 추가할 것.
 - 이 조합이 강했는지/약했는지, 왜 그런지
 - 다른 장르에도 적용해볼 만한지
 
----
-tags:
-  - prototype
+## 분류
+
+<div class="bm-categories" markdown>
+[프로토타입](../tags.md#tag:prototype){ .bm-cat-chip }
+</div>

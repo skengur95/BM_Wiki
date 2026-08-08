@@ -1,3 +1,9 @@
+---
+tags:
+  - genre
+  - mmorpg
+---
+
 # MMORPG
 
 **핵심 재미 요소:** 캐릭터 성장의 누적, 아이템/장비 소유욕, 그리고 서버 내 사회적 위계(누가 더 강한가, 누가 더 좋은 장비를 가졌는가)가 재미의 축이다. 콘텐츠 자체보다 "내가 이 세계에서 어떤 위치인가"가 지속 플레이의 동력이 된다.
@@ -28,7 +34,9 @@
 
 - (아직 없음)
 
----
-tags:
-  - genre
-  - mmorpg
+## 분류
+
+<div class="bm-categories" markdown>
+[장르](../tags.md#tag:genre){ .bm-cat-chip }
+[MMORPG](../tags.md#tag:mmorpg){ .bm-cat-chip }
+</div>

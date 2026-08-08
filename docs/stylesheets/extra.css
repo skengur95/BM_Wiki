@@ -1,0 +1,56 @@
+/* 나무위키를 참고한 커스텀 스타일.
+   분류는 문서 맨 위가 아니라 맨 아래에서만 보여준다 (자동 칩은 숨김). */
+
+.md-content .md-tags {
+  display: none;
+}
+
+/* 문서 하단 "분류" 뱃지 */
+.bm-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.bm-cat-chip {
+  display: inline-block;
+  padding: 0.15rem 0.65rem;
+  border-radius: 0.2rem;
+  background-color: var(--md-default-fg-color--lightest);
+  color: var(--md-primary-fg-color) !important;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.bm-cat-chip:hover {
+  background-color: var(--md-accent-fg-color);
+  color: var(--md-accent-bg-color) !important;
+}
+
+/* 링크 색 - 나무위키 특유의 선명한 파란 링크 */
+.md-typeset a {
+  color: var(--md-accent-fg-color);
+}
+
+.md-typeset a:hover {
+  text-decoration: underline;
+}
+
+/* 각주(footnote) 번호를 나무위키처럼 대괄호로 */
+.md-typeset .footnote-ref {
+  font-weight: 600;
+}
+
+/* 역링크/분류 섹션은 본문보다 살짝 옅게, 부록처럼 보이도록 */
+.md-typeset h2:has(+ .bm-categories),
+.md-typeset h2#이-문서를-링크하는-문서 {
+  font-size: 1rem;
+  color: var(--md-default-fg-color--light);
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  padding-top: 0.8rem;
+  margin-top: 2rem;
+}

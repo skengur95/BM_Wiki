@@ -1,3 +1,9 @@
+---
+tags:
+  - bm-catalog
+  - 시간-진행
+---
+
 # 구독형
 
 **한줄 정의:** 정기 결제로 지속적인 혜택(재화, 편의 기능, 콘텐츠 접근권)을 제공하는 구조.
@@ -30,7 +36,9 @@
 
 - [배틀패스 / 시즌패스](battle-pass.md)
 
----
-tags:
-  - bm-catalog
-  - 시간-진행
+## 분류
+
+<div class="bm-categories" markdown>
+[BM 분류](../tags.md#tag:bm-catalog){ .bm-cat-chip }
+[시간·진행](../tags.md#tag:시간-진행){ .bm-cat-chip }
+</div>

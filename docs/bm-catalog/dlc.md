@@ -1,3 +1,9 @@
+---
+tags:
+  - bm-catalog
+  - 콘텐츠-확장
+---
+
 # DLC / 에피소드 판매
 
 **한줄 정의:** 완성된 콘텐츠 단위(스토리, 맵, 캐릭터 팩 등)를 개별 상품으로 판매하는 구조.
@@ -30,7 +36,9 @@
 
 - [구독형](subscription.md)
 
----
-tags:
-  - bm-catalog
-  - 콘텐츠-확장
+## 분류
+
+<div class="bm-categories" markdown>
+[BM 분류](../tags.md#tag:bm-catalog){ .bm-cat-chip }
+[콘텐츠 확장](../tags.md#tag:콘텐츠-확장){ .bm-cat-chip }
+</div>

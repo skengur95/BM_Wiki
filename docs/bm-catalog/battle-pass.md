@@ -1,3 +1,9 @@
+---
+tags:
+  - bm-catalog
+  - 시간-진행
+---
+
 # 배틀패스 / 시즌패스
 
 **한줄 정의:** 시즌 단위로 무료/유료 두 트랙을 두고, 플레이(경험치 획득)로 트랙을 진행시켜 순차적으로 보상을 얻게 하는 구조.
@@ -38,7 +44,9 @@
 
 - [확률형 아이템 / 가챠](probability-item.md)
 
----
-tags:
-  - bm-catalog
-  - 시간-진행
+## 분류
+
+<div class="bm-categories" markdown>
+[BM 분류](../tags.md#tag:bm-catalog){ .bm-cat-chip }
+[시간·진행](../tags.md#tag:시간-진행){ .bm-cat-chip }
+</div>
