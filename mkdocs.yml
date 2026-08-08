@@ -1,6 +1,6 @@
 site_name: BM Wiki
 site_description: 게임 BM(수익모델) 분류·역사·프로토타입 아카이브
-site_url: ""
+site_url: "https://skengur95.github.io/BM_Wiki/"
 
 theme:
   name: material
