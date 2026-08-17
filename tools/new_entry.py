@@ -3,7 +3,7 @@
 사용법:
     python tools/new_entry.py <카테고리> "<제목>" [--slug <slug>]
 
-카테고리: bm-catalog | genres | prototypes
+카테고리: concepts | bm-catalog | genres | prototypes
 
 예시:
     python tools/new_entry.py bm-catalog "쿠폰형 할인" --slug coupon-discount
@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 DOCS = Path(__file__).resolve().parent.parent / "docs"
-CATEGORIES = {"bm-catalog", "genres", "prototypes"}
+CATEGORIES = {"concepts", "bm-catalog", "genres", "prototypes"}
 
 
 def slugify(title: str) -> str:
@@ -55,6 +55,7 @@ def main() -> int:
     content = content.replace("{BM 이름}", args.title)
     content = content.replace("{장르 이름}", args.title)
     content = content.replace("{프로토타입 이름}", args.title)
+    content = content.replace("{개념 이름}", args.title)
 
     target_path.write_text(content, encoding="utf-8")
     print(f"생성됨: {target_path.relative_to(DOCS.parent)}")

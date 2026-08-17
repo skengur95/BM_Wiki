@@ -136,6 +136,7 @@ credentials.json    # OAuth 인증 (gitignore 처리됨)
 token.json          # OAuth 토큰 (gitignore 처리됨)
 
 docs/               # BM 위키 콘텐츠 (MkDocs Material 소스). 여기가 진짜 결과물.
+  concepts/         # BM 판단의 토대가 되는 이론/프레임워크 (리텐션, AARRR, PMF 등)
   bm-catalog/       # BM 종류별 분류 (정의/역사/사례/적합 장르)
   genres/           # 장르별 핵심 재미요소 + 적합/지양 BM
   prototypes/       # 장르+BM 프로토타입 실험 기록

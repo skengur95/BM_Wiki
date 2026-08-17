@@ -68,6 +68,8 @@ markdown_extensions:
 
 nav:
   - 홈: index.md
+  - 개념/프레임워크:
+      - concepts/index.md
   - BM 분류 총람:
       - bm-catalog/index.md
   - 장르별 지도:
