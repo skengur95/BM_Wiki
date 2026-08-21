@@ -1,0 +1,1005 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="게임 BM(수익모델) 분류·역사·프로토타입 아카이브">
+      
+      
+      
+        <link rel="canonical" href="https://skengur95.github.io/BM_Wiki/bm-catalog/consumable/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>소모성 재화 (컨슈머블) - BM Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="../.." title="BM Wiki" class="md-header__button md-logo" aria-label="BM Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BM Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              소모성 재화 (컨슈머블)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  홈
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../concepts/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  개념/프레임워크
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  BM 분류 총람
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../genres/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  장르별 지도
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../prototypes/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  프로토타입 로그
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tags/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  태그
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BM Wiki" class="md-nav__button md-logo" aria-label="BM Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    BM Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../concepts/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    개념/프레임워크
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    개념/프레임워크
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BM 분류 총람
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    BM 분류 총람
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../genres/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    장르별 지도
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    장르별 지도
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../prototypes/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    프로토타입 로그
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    프로토타입 로그
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    태그
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        등장 배경 / 역사
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        대표 사례
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        적합한 재미 요소 / 장르
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        지양해야 할 상황 / 부작용
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        파생형 / 변형
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        관련 항목
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        분류
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        이 문서를 링크하는 문서
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <a href="../../tags/#tag:bm-catalog" class="md-tag">bm-catalog</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../tags/#tag:소모성-재화" class="md-tag">소모성-재화</a>
+      
+    
+  </nav>
+
+
+
+<h1 id="_1">소모성 재화 (컨슈머블)<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p><strong>한줄 정의:</strong> 사용 즉시 소모되어 재고가 사라지는 부스터/재화형 아이템 — 스태미나(기력) 충전, 부활권, 경험치 부스트, 시간단축권 등. 플레이 세션의 병목(게이트)을 화폐화하는 구조.</p>
+<p><strong>상태:</strong> 초안 (기초 리서치 완료, 세부 검증 필요)</p>
+<h2 id="_2">등장 배경 / 역사<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>2009년 6월 19일, FarmVille (Zynga)</strong> — 출시 첫 주에 DAU 100만 명을 돌파하며 초기 소셜게임 붐을 이끈 타이틀. "에너지"가 없으면 농장 활동이 제한되고, 유상 재화(Farm Cash)로 즉시 충전할 수 있는 구조를 갖췄다. Zynga는 이 방식으로 "가상재화 판매가 매출의 대부분을 차지하는 최초의 상장 게임사"가 되었다고 평가받는다. <em>(에너지 시스템의 정확한 도입 시점·최초 원조 사례 여부는 검증 필요)</em></li>
+<li><strong>2012년, Puzzle &amp; Dragons (GungHo)</strong> — 던전 탐사에 스태미나를 소모하고, 소진되면 시간 경과로 자연 회복하거나 유상 재화로 즉시 회복하는 구조. 이후 일본/한국 모바일 RPG 전반에 "스태미나 게이트"가 표준 패턴으로 정착하는 데 큰 영향을 준 사례로 꼽힌다. <em>(업계 표준화 과정의 세부 연쇄는 검증 필요)</em></li>
+<li><strong>2012년 7월 30일, 애니팡 (선데이토즈)</strong> — 카카오톡 기반 모바일게임으로, 8분에 1개씩 최대 5개까지 차는 "하트"가 있어야 플레이가 가능했다. 하트는 돈으로 살 수도 있지만 카카오톡 친구에게 요청·선물받을 수도 있었는데, 이 때문에 학교 등에서 친구를 압박해 하트를 받아내는 "하트 셔틀" 현상이 사회적 이슈가 됐다. 소모성 재화가 소셜 그래프와 결합했을 때 생기는 부작용을 보여준 국내 초기 사례.</li>
+<li><strong>2012년 4월 12일, Candy Crush Saga (King)</strong> — 페이스북판 출시 당시 5개의 "목숨(Lives)"이 시간이 지나면 자연 회복되고, 골드바로 즉시 구매/회복할 수 있는 구조를 채택. 업계에서는 이를 "Zynga 라이프 모델"이라 부르며 캐주얼 퍼즐 장르의 표준 소모성 재화 BM으로 자리잡았다.</li>
+<li><strong>2014년 5월 8일, Candy Crush Saga "Live Forever"</strong> — 일정 시간(1~24시간) 동안 목숨을 무제한으로 만들어주는 부스터를 판매하기 시작. 건별 소모형 아이템이 "구독형 무제한 이용권"으로 확장되는 초기 사례.</li>
+<li><strong>2010년 전후, 리워드 광고(오퍼월)의 등장</strong> — 초기 프리투플레이 게임들이 배너/전면광고 중심이었다면, 2010년경부터 오퍼월과 리워드 비디오 광고가 등장하며 "광고를 보면 에너지/목숨을 무료로 채워주는" 패턴이 자리잡기 시작했다. <em>(정확한 최초 사례·연도는 검증 필요)</em></li>
+</ul>
+<h2 id="_3">대표 사례<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>연도</th>
+<th>게임</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2009</td>
+<td>FarmVille (Zynga)</td>
+<td>에너지 소진 시 농장 활동 제한, 유상 재화(Farm Cash)로 즉시 충전. 소셜게임 시대 소모성 재화 BM의 대표 원형</td>
+</tr>
+<tr>
+<td>2012</td>
+<td>Puzzle &amp; Dragons (GungHo)</td>
+<td>던전 탐사에 스태미나 소모, 소진 시 유상 재화로 즉시 회복하거나 자연 회복 대기. 모바일 RPG "스태미나 게이트"의 대표 사례</td>
+</tr>
+<tr>
+<td>2012</td>
+<td>애니팡 (선데이토즈)</td>
+<td>카카오톡 기반 하트(생명력) 시스템. 지인에게 요청/선물 가능해 소셜 바이럴과 결합, "하트 셔틀" 사회현상으로 이어짐</td>
+</tr>
+<tr>
+<td>2012</td>
+<td>Candy Crush Saga (King)</td>
+<td>5개 목숨(Lives), 시간 경과 자연회복 + 골드바 즉시 구매. 캐주얼 퍼즐 장르 표준 BM으로 정착</td>
+</tr>
+<tr>
+<td>2014-05-08</td>
+<td>Candy Crush Saga "Live Forever"</td>
+<td>일정 시간 목숨 무제한 부스터 판매 — 건별 소모형이 구독형 이용권으로 확장된 초기 사례</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">적합한 재미 요소 / 장르<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>짧은 세션 반복이 핵심 재미인 캐주얼 퍼즐(매치3 등)</strong> — 목숨/생명력이 자연스러운 세션 종료 트리거가 되어 "다음 판까지 기다림"이라는 리텐션 훅으로 작동한다.</li>
+<li><strong>소셜/메신저 기반 게임</strong> — 하트 요청·선물처럼 소모성 재화 자체가 바이럴 루프의 매개체가 될 수 있다 (애니팡 사례).</li>
+<li><strong>던전 탐사·스테이지 클리어형 모바일 RPG</strong> — 스태미나가 "하루에 얼마나 플레이할 수 있는가"를 통제하는 페이싱(pacing) 도구로 기능해, 콘텐츠 소비 속도와 서버 운영 부하를 동시에 조절한다.</li>
+<li><strong>실패-재도전 루프가 빠른 장르(로그라이크, 하드코어 액션 보스전 등)</strong> — 부활권/재도전권은 실패 직후의 감정적 타이밍에 소비를 유도하기 좋다.</li>
+</ul>
+<h2 id="_5">지양해야 할 상황 / 부작용<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ul>
+<li>코어 진행(스토리, 성장, PvP 등)을 과도하게 게이팅하면 몰입 흐름이 끊기고, 소모성 재화가 "재미의 대가"가 아니라 "재미의 장벽"으로 인식되는 순간 수익화 대신 이탈을 유발한다.</li>
+<li>소셜 강요형 설계(친구에게 재화 요청)는 애니팡의 "하트 셔틀" 사례처럼 브랜드 이미지 훼손이나 사회적 반발로 이어질 수 있다.</li>
+<li>하드코어/고과금 유저 입장에서는 스태미나 갭이 콘텐츠 소비 속도를 인위적으로 늦추는 것으로 느껴져 피로도와 이탈을 높일 수 있다 — 특히 콘텐츠 소모 속도가 빠른 유저일수록 체감 게이트가 강하다.</li>
+<li>부활권을 지나치게 관대하게 남발하면 실패의 리스크와 긴장감이 사라져, 게임의 핵심 도전 구조 자체를 약화시킬 수 있다.</li>
+</ul>
+<h2 id="_6">파생형 / 변형<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>광고 시청형 리필</strong> — 리워드 비디오 광고를 보면 에너지/목숨을 무료로 채워주는 방식. 무과금 유저의 리텐션을 확보하면서 광고 수익을 얻는 구조로, <a href="../ad-based/">광고 기반 BM</a>과 경계가 맞닿아 있다.</li>
+<li><strong>구독형 무제한 이용권</strong> — Candy Crush "Live Forever"처럼 일정 기간 소모 자체를 무력화하는 정액 상품. 개별 소모성 재화 판매가 <a href="../subscription/">구독형 BM</a>으로 수렴하는 형태.</li>
+<li><strong>소셜 선물/요청형</strong> — 애니팡처럼 재화를 현금이 아니라 소셜 그래프로 조달하게 해, 소모성 재화 자체가 바이럴 루프의 매개체가 되는 변형.</li>
+<li><strong>배틀패스 보상형 지급</strong> — 시즌패스 진행 보상으로 소모성 재화를 지급해 "패스 구매 → 재화 확보 → 플레이 지속"의 순환을 만드는 결합형.</li>
+<li><strong>순수 시간축 콘텐츠 게이트 (웹툰 "기다리면 무료"류) — 소모성 재화와는 다른 계열</strong>: 카카오페이지의 "기다리면 무료"(기다무)는 일정 시간이 지나면 다음 회차가 무료로 열리고, 결제하면 그 대기 시간을 건너뛸 수 있는 구조다. 스태미나·목숨처럼 "반복 사용 가능한 재화"를 소모·충전하는 것이 아니라, 콘텐츠 한 단위(챕터/회차)마다 한 번만 적용되는 시간 잠금이라는 점에서 이 문서가 다루는 소모성 재화와는 결이 다르다. 게임에서는 <a href="../../genres/slg/">SLG 장르</a>의 건설/훈련 대기시간이 이 방식에 가장 가깝다. 유료 결제가 "재화 구매"가 아니라 "순수하게 기다림을 사는 것"이라는 프레이밍이 소모성 재화 대비 가격 저항감을 낮춘다는 점이 이 모델의 핵심 심리 기제로 꼽힌다. <em>(타산업 사례이며 국내 게임에서의 직접 적용 사례는 검증 필요)</em></li>
+</ul>
+<h2 id="_7">관련 항목<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../probability-item/">확률형 아이템 / 가챠</a></li>
+<li><a href="../subscription/">구독형 BM</a></li>
+</ul>
+<h2 id="_8">분류<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<div class="bm-categories">
+<p><a class="bm-cat-chip" href="../../tags/#tag:bm-catalog">BM 분류</a>
+<a class="bm-cat-chip" href="../../tags/#tag:소모성-재화">소모성 재화</a></p>
+</div>
+<h2 id="_9">이 문서를 링크하는 문서<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../">BM 분류 총람</a></li>
+<li><a href="../../genres/slg/">SLG / 전략</a></li>
+<li><a href="../../genres/vr-ar/">VR / AR</a></li>
+<li><a href="../../concepts/payer-segmentation/">결제자 세그먼트와 결제 동기</a></li>
+<li><a href="../ad-based/">광고형 (리워드형)</a></li>
+<li><a href="../../genres/social-casino/">소셜 카지노</a></li>
+<li><a href="../../genres/collection-rpg/">수집형 RPG</a></li>
+<li><a href="../../genres/casual/">캐주얼 / 하이퍼캐주얼</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

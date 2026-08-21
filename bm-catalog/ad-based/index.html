@@ -1,0 +1,1014 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="게임 BM(수익모델) 분류·역사·프로토타입 아카이브">
+      
+      
+      
+        <link rel="canonical" href="https://skengur95.github.io/BM_Wiki/bm-catalog/ad-based/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>광고형 (리워드형) - BM Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="../.." title="BM Wiki" class="md-header__button md-logo" aria-label="BM Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BM Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              광고형 (리워드형)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  홈
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../concepts/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  개념/프레임워크
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  BM 분류 총람
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../genres/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  장르별 지도
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../prototypes/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  프로토타입 로그
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tags/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  태그
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BM Wiki" class="md-nav__button md-logo" aria-label="BM Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    BM Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../concepts/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    개념/프레임워크
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    개념/프레임워크
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BM 분류 총람
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    BM 분류 총람
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../genres/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    장르별 지도
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    장르별 지도
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../prototypes/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    프로토타입 로그
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    프로토타입 로그
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    태그
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        등장 배경 / 역사
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        대표 사례
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        적합한 재미 요소 / 장르
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        지양해야 할 상황 / 부작용
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        파생형 / 변형
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        관련 항목
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        분류
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        이 문서를 링크하는 문서
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <a href="../../tags/#tag:bm-catalog" class="md-tag">bm-catalog</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../tags/#tag:비결제" class="md-tag">비결제</a>
+      
+    
+  </nav>
+
+
+
+<h1 id="_1">광고형 (리워드형)<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p><strong>한줄 정의:</strong> 플레이어의 결제 대신 광고 시청(또는 노출)을 재화·보상·게임 진행과 교환하는 비결제 수익 구조.</p>
+<p><strong>상태:</strong> 초안 (기초 리서치 완료, 세부 검증 필요)</p>
+<h2 id="_2">등장 배경 / 역사<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>더 넓은 역사적 뿌리: 라디오 광고(1920년대)와 최초 배너 광고(1994년, HotWired)</strong> — "무료 콘텐츠 제공 + 광고주가 비용 지불"이라는 광고형 BM의 기본 구조는 게임보다 훨씬 오래된 라디오 방송 산업(1920년대 미국)에서 이미 정착됐다. 디지털 환경에서는 1994년 HotWired의 최초 배너 광고, 1998년 구글 애드워즈(AdWords)의 클릭당 과금(PPC) 도입이 온라인 광고 산업의 표준을 세웠고, 모바일 게임의 리워드/전면 광고는 이 계보 위에 있다. <em>(라디오 광고의 정확한 최초 상업 사례·연도는 검증 필요)</em></li>
+<li>모바일 게임 초기(2010년 전후)에는 <strong>오퍼월(offerwall)</strong>이 리워드형 광고의 원형이었다. Tapjoy, Supersonic 등이 게임 안에 별도 허브를 두고 "다른 앱을 설치하면 재화 지급" 같은 오퍼를 노출했다 <em>(검증 필요)</em>.</li>
+<li><strong>AdColony</strong>가 풀스크린 리워드 비디오 광고 포맷을 처음 상용화한 회사로 꼽히며, 이후 Vungle 등 비디오 광고 네트워크가 뒤따르면서 "영상 시청 → 보상 지급" 방식이 표준 SDK 포맷으로 자리잡았다 <em>(검증 필요, 정확한 최초 출시 연도 미확인)</em>.</li>
+<li>광고형 BM은 두 가지 축으로 나뉜다: <strong>리워드형(선택형)</strong> — 플레이어가 자발적으로 광고를 시청하고 보상을 받는 방식(예: "광고 보고 부활하기", "광고 보고 재화 2배") — 과 <strong>강제형(전면 광고, interstitial)</strong> — 레벨 사이·세션 전환 시 플레이어 의사와 무관하게 삽입되는 방식이다. 둘은 플레이어 경험과 이탈률에 미치는 영향이 크게 다르다.</li>
+<li><strong>2017~2018년, 하이퍼캐주얼 붐</strong>이 광고형 BM을 게임 산업의 주류 수익 모델로 끌어올린 결정적 사건이다. Voodoo, Ketchapp, Kwalee 같은 퍼블리셔가 극단적으로 단순한 원버튼 게임(예: Voodoo의 <em>Helix Jump</em>, 2018년 한 해 동안 3억 다운로드 이상 기록)을 대량 출시하면서, 세션 길이가 수십 초~수 분에 불과하고 결제 전환율이 극히 낮은 장르 전체가 <strong>광고 수익(IAA, In-App Advertising)에 97~99% 의존</strong>하는 구조를 확립했다.</li>
+<li>Voodoo의 매출은 2016년 약 110만 유로에서 2017년 7,100만 유로, 2018년 3억 2,500만 유로로 급성장했고, 2018년 8월 Tencent가 Voodoo에 투자하며 기업가치를 약 14억 달러 이상으로 평가했다 <em>(검증 필요)</em>.</li>
+<li><strong>2021년 6월, 애플의 ATT(App Tracking Transparency, iOS 14.5)</strong> 도입은 광고형 BM에 큰 타격을 줬다. IDFA 기반 유저 타겟팅이 사실상 무력화되면서 광고 단가와 UA(유저 획득) 정밀도가 하락했고, 마진이 얇은 하이퍼캐주얼 장르가 특히 큰 타격을 입었다. 이 시기를 기점으로 하이퍼캐주얼 퍼블리셔 대다수가 광고 단일 수익에서 벗어나 IAP를 결합한 <strong>하이브리드캐주얼(hybridcasual)</strong>로 전환했다.</li>
+<li>2020년 기준 하이퍼캐주얼 게임의 전 세계 광고 수익은 30억 달러를 넘어섰고 <em>(검증 필요)</em>, 이후 "IAA(광고)만으로는 지속가능하지 않다"는 공감대 속에 광고+결제를 함께 설계하는 <strong>하이브리드 수익화(hybrid monetization)</strong> 가 캐주얼·하이퍼캐주얼 업계 표준 설계 방식으로 자리잡았다.</li>
+</ul>
+<h2 id="_3">대표 사례<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>연도</th>
+<th>게임/사건</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2010년대 초</td>
+<td>오퍼월 (Tapjoy 등)</td>
+<td>앱 설치·행동 완료 시 게임 재화 지급 — 리워드형 광고의 원형 <em>(검증 필요)</em></td>
+</tr>
+<tr>
+<td>2014~2015</td>
+<td>Vungle, AdColony 성장</td>
+<td>풀스크린 리워드 비디오 광고 SDK가 업계 표준으로 확산 <em>(검증 필요)</em></td>
+</tr>
+<tr>
+<td>2017~2018</td>
+<td>Voodoo <em>Helix Jump</em> 등 하이퍼캐주얼</td>
+<td>강제 전면광고 + 리워드 광고를 결합한 광고 단일 수익 모델이 장르 표준으로 자리잡음</td>
+</tr>
+<tr>
+<td>2018.08</td>
+<td>Tencent, Voodoo 투자</td>
+<td>광고형 BM 기반 하이퍼캐주얼 퍼블리셔가 유니콘급 기업가치로 평가받음 <em>(검증 필요)</em></td>
+</tr>
+<tr>
+<td>2020</td>
+<td>하이퍼캐주얼 광고 매출 30억 달러 돌파</td>
+<td>광고형 BM이 특정 장르의 지배적 수익원으로 정착 <em>(검증 필요)</em></td>
+</tr>
+<tr>
+<td>2021.06</td>
+<td>애플 ATT(iOS 14.5) 시행</td>
+<td>IDFA 제한으로 광고 타겟팅·단가 하락, 하이퍼캐주얼 수익성 악화</td>
+</tr>
+<tr>
+<td>2021 이후</td>
+<td>하이브리드캐주얼(hybridcasual) 확산</td>
+<td>Voodoo 등 주요 퍼블리셔가 광고+IAP 결합 구조로 전환</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">적합한 재미 요소 / 장르<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>세션 길이가 매우 짧은 게임</strong>: 하이퍼캐주얼처럼 한 판이 수십 초~수 분 안에 끝나는 게임은 결제 UI를 노출·설계할 여유가 거의 없다. 반면 판이 끝나는 순간(사망, 재도전, 레벨 완료)마다 자연스러운 "광고 브레이크" 지점이 생긴다.</li>
+<li><strong>결제 장벽에 대한 내성이 극히 낮은 유저층</strong>: 하이퍼캐주얼 플레이어는 대부분 캐주얼 유저로 지갑을 잘 열지 않는다. IAP 전환율이 1% 미만인 경우가 흔해, 100% 유저에게서 소액이라도 뽑아낼 수 있는 광고형 BM이 구조적으로 더 잘 맞는다.</li>
+<li><strong>높은 재시도/반복 루프</strong>: "실패 → 재시도" 루프가 짧고 빈번한 게임(러너, 퍼즐, 물리 기반 원버튼 게임)은 "광고 보고 즉시 부활" "광고 보고 재도전권 획득" 같은 리워드형 광고를 자연스럽게 붙일 수 있는 지점이 많다. 이 지점은 플레이어가 이미 게임을 더 하고 싶어하는 순간이라 광고 시청 동의율이 높다.</li>
+<li><strong>캐주얼/퍼즐/타이쿤류의 유휴 대기 상황</strong>: "제작 시간 단축", "즉시 완료" 등 대기 시간을 광고로 스킵하는 방식도 리워드형 광고와 궁합이 좋다.</li>
+</ul>
+<h2 id="_5">지양해야 할 상황 / 부작용<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>강제 전면광고(interstitial)의 세션 흐름 파괴</strong>: 플레이어 의사와 무관하게 삽입되는 강제 광고는 몰입을 끊고, 빈도가 높을수록 삭제(언인스톨)율을 직접적으로 끌어올린다. 특히 광고 로딩 지연이나 오작동(닫기 버튼 오류 등)이 겹치면 이탈이 급증한다.</li>
+<li><strong>프리미엄/서사 중심 게임과의 충돌</strong>: 스토리 몰입이나 연출 완성도가 핵심 재미인 장르(내러티브 어드벤처, RPG 등)에서는 광고 삽입이 작품성·몰입을 해쳐 브랜드 이미지에도 부정적이다. 이런 장르는 광고형보다 결제형·구독형이 더 적합하다.</li>
+<li><strong>과도한 광고 노출로 인한 설치-삭제 악순환</strong>: 광고 임프레션 수를 늘리기 위해 광고 빈도를 과도하게 높이면 단기 수익은 늘지만 리텐션이 무너지고, 결과적으로 유저 생애가치(LTV)와 전체 광고 수익이 오히려 줄어드는 역설이 발생한다.</li>
+<li><strong>플랫폼/정책 리스크에 대한 구조적 취약성</strong>: 애플 ATT(2021) 사례처럼, 광고형 BM은 OS 플랫폼의 프라이버시 정책 변화 하나로 수익 기반 전체가 흔들릴 수 있다. 단일 채널(광고) 의존도가 높을수록 이 리스크에 취약하다.</li>
+</ul>
+<h2 id="_6">파생형 / 변형<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>리워드형 → 소모성 재화 결합</strong>: 광고 시청으로 <a href="../consumable/">소모성 재화 (컨슈머블)</a>를 지급하는 방식이 가장 흔한 결합형이다. "광고 1회 = 재화 소량 지급"이 기본 패턴이며, 결제로도 동일 재화를 살 수 있게 하여 광고와 IAP를 같은 경제 안에 공존시킨다.</li>
+<li><strong>오퍼월형</strong>: 광고 시청 대신 다른 앱 설치·튜토리얼 완료 등 특정 행동을 완료하면 더 큰 보상을 주는 방식. 초기 리워드형 광고의 원형이며 지금도 일부 캐주얼 게임에 남아있다.</li>
+<li><strong>하이브리드 수익화(hybrid monetization)</strong>: 광고(IAA)와 인앱결제(IAP)를 처음부터 함께 설계하는 방식. 2021년 이후 하이퍼캐주얼 업계 표준으로 자리잡았으며, 저지불 유저에게는 광고로, 고지불 유저(웨일)에게는 IAP로 수익을 뽑는 이원 구조를 지향한다.</li>
+<li><strong>광고 제거권 판매</strong>: 강제 전면광고를 영구히 없애주는 1회성 결제 상품. 광고형 BM과 결제형 BM의 접점에 있는 대표적 파생 상품이다.</li>
+</ul>
+<h2 id="_7">관련 항목<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../consumable/">소모성 재화 (컨슈머블)</a></li>
+<li><a href="../battle-pass/">배틀패스</a></li>
+</ul>
+<h2 id="_8">분류<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<div class="bm-categories">
+<p><a class="bm-cat-chip" href="../../tags/#tag:bm-catalog">BM 분류</a>
+<a class="bm-cat-chip" href="../../tags/#tag:비결제">비결제</a></p>
+</div>
+<h2 id="_9">이 문서를 링크하는 문서<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../">BM 분류 총람</a></li>
+<li><a href="../../genres/vr-ar/">VR / AR</a></li>
+<li><a href="../../concepts/network-effect/">네트워크 효과와 양면시장</a></li>
+<li><a href="../consumable/">소모성 재화 (컨슈머블)</a></li>
+<li><a href="../../genres/collection-rpg/">수집형 RPG</a></li>
+<li><a href="../../genres/casual/">캐주얼 / 하이퍼캐주얼</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
